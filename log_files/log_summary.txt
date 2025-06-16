@@ -1,0 +1,49 @@
+=======================================================================
+Log Summary
+-----------------------------------------------------------------------
+=======================================================================
+Line count summary
+-----------------------------------------------------------------------
+0 log_files/apport.log
+0 log_files/boot.log
+0 log_files/ubuntu-advantage-apt-hook.log
+0 log_files/unattended-upgrades-shutdown.log
+1 log_files/vboxadd-install.log
+35 log_files/unattended-upgrades.log
+80 log_files/cloud-init-output.log
+80 log_files/fontconfig.log
+109 log_files/history.log
+127 log_files/discover.log
+188 log_files/alternatives.log
+246 log_files/unattended-upgrades-dpkg.log
+652 log_files/term.log
+839 log_files/cloud-init.log
+1208 log_files/curtin-install.log
+1500 log_files/bootstrap.log
+1900 log_files/auth.log
+4680 log_files/kern.log
+13788 log_files/dpkg.log
+=======================================================================
+File size summary
+-----------------------------------------------------------------------
+964K	log_files/dpkg.log
+556K	log_files/kern.log
+240K	log_files/auth.log
+116K	log_files/bootstrap.log
+104K	log_files/cloud-init.log
+96K	log_files/curtin-install.log
+92K	log_files/history.log
+48K	log_files/term.log
+36K	log_files/alternatives.log
+20K	log_files/unattended-upgrades-dpkg.log
+12K	log_files/discover.log
+8.0K	log_files/fontconfig.log
+8.0K	log_files/cloud-init-output.log
+4.0K	log_files/vboxadd-install.log
+4.0K	log_files/unattended-upgrades.log
+4.0K	log_files/log_summary.txt
+2.3M	log_files
+0	log_files/unattended-upgrades-shutdown.log
+0	log_files/ubuntu-advantage-apt-hook.log
+0	log_files/boot.log
+0	log_files/apport.log

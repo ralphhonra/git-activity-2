@@ -1,0 +1,127 @@
+2025-06-09 01:13:07,867 curtin:120 Running command ['dpkg', '--print-architecture'] with allowed return codes [0] (capture=True)
+2025-06-09 01:13:08,579 curtin.reporting.start.subiquity/load_cloud_config:45 start: subiquity/load_cloud_config: 
+2025-06-09 01:13:08,580 curtin.reporting.start.subiquity/load_cloud_config/extract_autoinstall:45 start: subiquity/load_cloud_config/extract_autoinstall: 
+2025-06-09 01:13:08,580 curtin.reporting.start.subiquity/load_cloud_config/extract_autoinstall:45 start: subiquity/load_cloud_config/extract_autoinstall: 
+2025-06-09 01:13:08,770 curtin.reporting.start.subiquity/Meta/status_GET:45 start: subiquity/Meta/status_GET: 
+2025-06-09 01:13:08,771 curtin.reporting.finish.subiquity/Meta/status_GET:45 finish: subiquity/Meta/status_GET: SUCCESS: 200 {"state": "CLOUD_INIT_WAIT", "confirming_tty": "", "error": null, "nonreporta...
+2025-06-09 01:13:08,993 curtin.reporting.finish.subiquity/load_cloud_config/extract_autoinstall:45 finish: subiquity/load_cloud_config/extract_autoinstall: SUCCESS: 
+2025-06-09 01:13:08,994 curtin.reporting.finish.subiquity/load_cloud_config:45 finish: subiquity/load_cloud_config: SUCCESS: 
+2025-06-09 01:13:09,175 curtin.reporting.start.subiquity/load_autoinstall_config:45 start: subiquity/load_autoinstall_config: 
+2025-06-09 01:13:09,176 curtin.reporting.finish.subiquity/load_autoinstall_config:45 finish: subiquity/load_autoinstall_config: SUCCESS: 
+2025-06-09 01:13:09,176 curtin.reporting.start.subiquity/load_autoinstall_config:45 start: subiquity/load_autoinstall_config: 
+2025-06-09 01:13:09,176 curtin.reporting.finish.subiquity/load_autoinstall_config:45 finish: subiquity/load_autoinstall_config: SUCCESS: 
+2025-06-09 01:13:09,442 probert.utils:85 Command `/usr/sbin/dmidecode --string bios-vendor` exited with result: 1
+2025-06-09 01:13:09,442 probert.utils:52 <empty stdout>
+2025-06-09 01:13:09,442 probert.utils:48 stderr: ------------------------------------------
+2025-06-09 01:13:09,442 probert.utils:50 /sys/firmware/efi/systab: SMBIOS entry point missing
+2025-06-09 01:13:09,442 probert.utils:88 --------------------------------------------------
+2025-06-09 01:13:09,442 probert.firmware:58 could not determine bios bios-vendor: dmidecode failure
+2025-06-09 01:13:09,444 probert.utils:85 Command `/usr/sbin/dmidecode --string bios-version` exited with result: 1
+2025-06-09 01:13:09,444 probert.utils:52 <empty stdout>
+2025-06-09 01:13:09,444 probert.utils:48 stderr: ------------------------------------------
+2025-06-09 01:13:09,444 probert.utils:50 /sys/firmware/efi/systab: SMBIOS entry point missing
+2025-06-09 01:13:09,444 probert.utils:88 --------------------------------------------------
+2025-06-09 01:13:09,444 probert.firmware:58 could not determine bios bios-version: dmidecode failure
+2025-06-09 01:13:09,447 probert.utils:85 Command `/usr/sbin/dmidecode --string bios-release-date` exited with result: 1
+2025-06-09 01:13:09,447 probert.utils:52 <empty stdout>
+2025-06-09 01:13:09,447 probert.utils:48 stderr: ------------------------------------------
+2025-06-09 01:13:09,447 probert.utils:50 /sys/firmware/efi/systab: SMBIOS entry point missing
+2025-06-09 01:13:09,447 probert.utils:88 --------------------------------------------------
+2025-06-09 01:13:09,447 probert.firmware:58 could not determine bios bios-release-date: dmidecode failure
+2025-06-09 01:13:09,448 probert.multipath:37 Failed to run cmd: ['multipathd', 'show', 'maps', 'raw', 'format', '%w,%d,%N']
+2025-06-09 01:13:09,449 probert.multipath:37 Failed to run cmd: ['multipathd', 'show', 'paths', 'raw', 'format', '%d,%z,%m,%N,%n,%R,%r,%a']
+2025-06-09 01:13:09,451 probert.os:68 failed to locate os-prober
+2025-06-09 01:13:09,970 probert.dasd:133 Probing DASD devies
+2025-06-09 01:13:09,970 probert.dasd:136 DASD devices only present on s390x, arch=aarch64
+2025-06-09 01:13:09,974 curtin:1467 Extracting storage config from probe data
+2025-06-09 01:13:09,975 curtin:73 /dev/sda is multipath device member? False
+2025-06-09 01:13:09,975 curtin:86 /dev/sda is multipath device partition? False
+2025-06-09 01:13:09,975 curtin:61 /dev/sda is multipath device? False
+2025-06-09 01:13:09,975 curtin:86 /dev/sda is multipath device partition? False
+2025-06-09 01:13:09,975 curtin:61 /dev/sda is multipath device? False
+2025-06-09 01:13:10,006 curtin:73 /dev/sr0 is multipath device member? False
+2025-06-09 01:13:10,006 curtin:86 /dev/sr0 is multipath device partition? False
+2025-06-09 01:13:10,006 curtin:73 /dev/sr0 is multipath device member? False
+2025-06-09 01:13:10,006 curtin:1474 Sorting extracted configurations
+2025-06-09 01:13:10,006 curtin:1494 Validating extracted storage config components
+2025-06-09 01:13:10,014 curtin:1511 Extracted (unmerged) storage config:
+storage:
+-   id: disk-sda
+    path: /dev/sda
+    type: disk
+
+2025-06-09 01:13:10,014 curtin:1515 Generating storage config dependencies
+2025-06-09 01:13:10,014 curtin:1521 Merging storage config dependencies
+2025-06-09 01:13:10,014 curtin:1526 Merged storage config:
+storage:
+    config:
+    -   id: disk-sda
+        path: /dev/sda
+        type: disk
+    version: 2
+
+2025-06-09 01:16:42,141 curtin:1467 Extracting storage config from probe data
+2025-06-09 01:16:42,142 curtin:73 /dev/sda is multipath device member? False
+2025-06-09 01:16:42,142 curtin:86 /dev/sda is multipath device partition? False
+2025-06-09 01:16:42,142 curtin:61 /dev/sda is multipath device? False
+2025-06-09 01:16:42,142 curtin:86 /dev/sda is multipath device partition? False
+2025-06-09 01:16:42,142 curtin:61 /dev/sda is multipath device? False
+2025-06-09 01:16:42,149 curtin:73 /dev/sr0 is multipath device member? False
+2025-06-09 01:16:42,149 curtin:86 /dev/sr0 is multipath device partition? False
+2025-06-09 01:16:42,149 curtin:73 /dev/sr0 is multipath device member? False
+2025-06-09 01:16:42,149 curtin:1474 Sorting extracted configurations
+2025-06-09 01:16:42,149 curtin:1494 Validating extracted storage config components
+2025-06-09 01:16:42,156 curtin:1511 Extracted (unmerged) storage config:
+storage:
+-   id: disk-sda
+    path: /dev/sda
+    type: disk
+
+2025-06-09 01:16:42,156 curtin:1515 Generating storage config dependencies
+2025-06-09 01:16:42,156 curtin:1521 Merging storage config dependencies
+2025-06-09 01:16:42,156 curtin:1526 Merged storage config:
+storage:
+    config:
+    -   id: disk-sda
+        path: /dev/sda
+        type: disk
+    version: 2
+
+2025-06-09 01:16:42,166 curtin:1467 Extracting storage config from probe data
+2025-06-09 01:16:42,167 curtin:73 /dev/sda is multipath device member? False
+2025-06-09 01:16:42,167 curtin:86 /dev/sda is multipath device partition? False
+2025-06-09 01:16:42,167 curtin:61 /dev/sda is multipath device? False
+2025-06-09 01:16:42,167 curtin:86 /dev/sda is multipath device partition? False
+2025-06-09 01:16:42,167 curtin:61 /dev/sda is multipath device? False
+2025-06-09 01:16:42,173 curtin:73 /dev/sr0 is multipath device member? False
+2025-06-09 01:16:42,173 curtin:86 /dev/sr0 is multipath device partition? False
+2025-06-09 01:16:42,173 curtin:73 /dev/sr0 is multipath device member? False
+2025-06-09 01:16:42,173 curtin:1474 Sorting extracted configurations
+2025-06-09 01:16:42,173 curtin:1494 Validating extracted storage config components
+2025-06-09 01:16:42,179 curtin:1511 Extracted (unmerged) storage config:
+storage:
+-   id: disk-sda
+    path: /dev/sda
+    type: disk
+
+2025-06-09 01:16:42,179 curtin:1515 Generating storage config dependencies
+2025-06-09 01:16:42,179 curtin:1521 Merging storage config dependencies
+2025-06-09 01:16:42,179 curtin:1526 Merged storage config:
+storage:
+    config:
+    -   id: disk-sda
+        path: /dev/sda
+        type: disk
+    version: 2
+
+2025-06-09 01:16:45,130 curtin:117 Setting up Layered Source for stack ['///cdrom/casper/minimal.squashfs', '///cdrom/casper/minimal.en.squashfs']
+2025-06-09 01:16:45,130 curtin:120 Running command ['mount', '-o', 'loop,ro', '///cdrom/casper/minimal.squashfs', '/tmp/tmprza_rvi8/minimal.squashfs.dir'] with allowed return codes [0] (capture=True)
+2025-06-09 01:16:45,142 curtin:120 Running command ['mount', '-o', 'loop,ro', '///cdrom/casper/minimal.en.squashfs', '/tmp/tmprza_rvi8/minimal.en.squashfs.dir'] with allowed return codes [0] (capture=True)
+2025-06-09 01:16:45,168 curtin:120 Running command ['mount', '-o', 'lowerdir=/tmp/tmprza_rvi8/minimal.en.squashfs.dir:/tmp/tmprza_rvi8/minimal.squashfs.dir', '-t', 'overlay', 'overlay', '/tmp/tmprza_rvi8/root.dir'] with allowed return codes [0] (capture=True)
+2025-06-09 01:16:50,387 curtin:117 Setting up Layered Source for stack ['///cdrom/casper/minimal.squashfs', '///cdrom/casper/minimal.en.squashfs']
+2025-06-09 01:16:50,387 curtin:120 Running command ['mount', '-o', 'loop,ro', '///cdrom/casper/minimal.squashfs', '/tmp/tmp_oton3zb/minimal.squashfs.dir'] with allowed return codes [0] (capture=True)
+2025-06-09 01:16:50,390 curtin:120 Running command ['mount', '-o', 'loop,ro', '///cdrom/casper/minimal.en.squashfs', '/tmp/tmp_oton3zb/minimal.en.squashfs.dir'] with allowed return codes [0] (capture=True)
+2025-06-09 01:16:50,391 curtin:120 Running command ['mount', '-o', 'lowerdir=/tmp/tmp_oton3zb/minimal.en.squashfs.dir:/tmp/tmp_oton3zb/minimal.squashfs.dir', '-t', 'overlay', 'overlay', '/tmp/tmp_oton3zb/root.dir'] with allowed return codes [0] (capture=True)
+2025-06-09 01:23:54,737 curtin:120 Running command ['umount', '/tmp/tmp_oton3zb/root.dir'] with allowed return codes [0] (capture=True)
+2025-06-09 01:23:54,741 curtin:120 Running command ['umount', '/tmp/tmp_oton3zb/minimal.en.squashfs.dir'] with allowed return codes [0] (capture=True)
+2025-06-09 01:23:54,747 curtin:120 Running command ['umount', '/tmp/tmp_oton3zb/minimal.squashfs.dir'] with allowed return codes [0] (capture=True)
